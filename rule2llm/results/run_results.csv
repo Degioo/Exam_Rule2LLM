@@ -1,0 +1,4 @@
+document_id,model,run,violated,ok,uncertain,notes
+DOC_001,GPT-5.2,1,"05A;08","01;10A;12","02;03;13","Baseline OCR, correct UNCERTAIN handling"
+DOC_002,GPT-5.2,1,"05A;10A","01;08;12","02;03;13","Handled vague posology and OCR noise in ATC"
+DOC_003,GPT-5.2,1,"","01;05A;08;10A;12","02;03;13","Correct negation handling, avoided false positive"
