@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables
+.env
+.env.*
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large model files (do NOT commit embedding binaries)
+models/*.bin
+models/*.gz
+models/*.vec
+models/*.zip
+models/*.tar
+models/*.tar.gz
+
+# Results (optional: comment out if you want to track CSVs)
+# results/*.csv
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
