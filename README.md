@@ -170,14 +170,14 @@ Run all cells top-to-bottom. Results are saved automatically to `results/run_res
 
 ## Results Overview
 
-| Model | Macro-P | Macro-R | Macro-F1 |
-|-------|---------|---------|----------|
-| TFIDF-IR | — | — | — |
-| TFIDF+LogReg | — | — | — |
-| fastText-sim-05A | — | — | — |
-| Rule2LLM (LLM) | — | — | — |
+| Model | Macro-P | Macro-R | Macro-F1 | Notes |
+|-------|---------|---------|----------|-------|
+| TFIDF-IR | 0.240 | 0.750 | 0.337 | High recall, low precision — classifies most docs as OK |
+| TFIDF+LogReg | 0.250 | 0.250 | 0.250 | Illustrative only — too few training examples |
+| fastText-sim-05A | 0.750 | 0.600 | 0.667 | Rule 05A only — best single-rule baseline |
+| Rule2LLM (LLM) | — | — | — | Requires local Ollama or OpenAI API key |
 
-*Run the notebook to populate this table with your results.*
+*Full per-rule breakdown available in [`results/summary.csv`](results/summary.csv).*
 
 ---
 

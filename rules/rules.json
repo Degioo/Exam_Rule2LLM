@@ -1,10 +1,34 @@
-{
-    "01": "Rule 01 description",
-    "02": "Rule 02 description",
-    "03": "Rule 03 description",
-    "05A": "Rule 05A description",
-    "08": "Rule 08 description",
-    "10A": "Rule 10A description",
-    "12": "Rule 12 description",
-    "13": "Rule 13 description"
-}
+[
+    {
+        "id": "01",
+        "description": "Expiry date must be present (Utilizzare entro)."
+    },
+    {
+        "id": "02",
+        "description": "Doctor signature or stamp must be present."
+    },
+    {
+        "id": "03",
+        "description": "Pharmacy sending date (DATA INVIO) must be present."
+    },
+    {
+        "id": "05A",
+        "description": "Text must include special needs statement indicating non-responsiveness to industrial medicines."
+    },
+    {
+        "id": "08",
+        "description": "ATC code N02BG10 must be present (allow minor OCR variations)."
+    },
+    {
+        "id": "10A",
+        "description": "Explicit dosage and frequency must be present."
+    },
+    {
+        "id": "12",
+        "description": "Anti-doping warning must be present."
+    },
+    {
+        "id": "13",
+        "description": "All cost-related fields must be present."
+    }
+]
