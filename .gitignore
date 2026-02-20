@@ -16,9 +16,10 @@ env/
 .venv/
 .env/
 
-# Environment variables
+# ── SECRETS (NEVER COMMIT) ────────────────────────────────────────────────────
 .env
 .env.*
+!.env.example
 
 # IDEs
 .idea/
@@ -34,8 +35,8 @@ models/*.zip
 models/*.tar
 models/*.tar.gz
 
-# Results (optional: comment out if you want to track CSVs)
-# results/*.csv
+# Results — predictions (can be large); keep metrics CSVs in git
+results/predictions/*.jsonl
 
 # OS-generated files
 .DS_Store

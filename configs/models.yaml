@@ -1,0 +1,49 @@
+# configs/models.yaml
+# ─────────────────────
+# Model matrix for Rule2LLM evaluation.
+# Each entry defines one full run (prediction + evaluation).
+#
+# To add a new model, append an entry following the same schema.
+# Run all entries with: python scripts/run_all_models.py
+
+runs:
+
+  - tag: openai_gpt41
+    provider: openai
+    model: gpt-4.1               # override OPENAI_MODEL env var
+    docs: data/docs
+    rules: data/rules.json
+    gold: data/gold_labels.json
+    out: results/predictions/openai_gpt41.jsonl
+    temperature: 0
+    max_retries: 2
+
+  - tag: ollama_mistral
+    provider: ollama
+    model: mistral:latest
+    docs: data/docs
+    rules: data/rules.json
+    gold: data/gold_labels.json
+    out: results/predictions/ollama_mistral.jsonl
+    temperature: 0
+    max_retries: 2
+
+  - tag: ollama_llama3
+    provider: ollama
+    model: llama3:8b-instruct
+    docs: data/docs
+    rules: data/rules.json
+    gold: data/gold_labels.json
+    out: results/predictions/ollama_llama3.jsonl
+    temperature: 0
+    max_retries: 2
+
+  - tag: ollama_qwen25
+    provider: ollama
+    model: qwen2.5:7b-instruct
+    docs: data/docs
+    rules: data/rules.json
+    gold: data/gold_labels.json
+    out: results/predictions/ollama_qwen25.jsonl
+    temperature: 0
+    max_retries: 2

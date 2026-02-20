@@ -1,0 +1,2 @@
+model,macro_precision,macro_recall,macro_f1,abstention_rate,n_predictions
+test_mock,0.25,0.25,0.25,0.375,8

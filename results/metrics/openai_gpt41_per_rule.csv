@@ -1,0 +1,9 @@
+model,rule_id,tp,fp,fn,precision,recall,f1,coverage
+openai_gpt41,01,3,0,0,1.0,1.0,1.0,1.0
+openai_gpt41,02,0,2,0,0.0,0.0,0.0,1.0
+openai_gpt41,03,1,4,0,0.2,1.0,0.3333,1.0
+openai_gpt41,05A,7,3,0,0.7,1.0,0.8235,1.0
+openai_gpt41,08,2,0,0,1.0,1.0,1.0,1.0
+openai_gpt41,10A,8,0,0,1.0,1.0,1.0,1.0
+openai_gpt41,12,5,0,1,1.0,0.8333,0.9091,1.0
+openai_gpt41,13,0,3,0,0.0,0.0,0.0,1.0

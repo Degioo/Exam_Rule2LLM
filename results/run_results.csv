@@ -1,4 +1,6 @@
-document_id,model,run,violated,ok,uncertain,notes
-DOC_001,GPT-5.2,1,"05A;08","01;10A;12","02;03;13","Baseline OCR, correct UNCERTAIN handling"
-DOC_002,GPT-5.2,1,"05A;10A","01;08;12","02;03;13","Handled vague posology and OCR noise in ATC"
-DOC_003,GPT-5.2,1,"","01;05A;08;10A;12","02;03;13","Correct negation handling, avoided false positive"
+model,provider,model_name,macro_precision,macro_recall,macro_f1,abstention_rate,n_predictions,docs_processed,notes
+TFIDF-IR,baseline,tfidf,0.2396,0.75,0.3374,0.0,120,15,High recall low precision
+TFIDF+LogReg,baseline,logistic,0.25,0.25,0.25,0.0,120,15,Illustrative only - tiny dataset
+fastText-sim-05A,baseline,fasttext,0.75,0.6,0.6667,0.0,15,15,Rule 05A only
+openai_gpt41,openai,gpt-4.1,0.6125,0.7292,0.6332,0.0,120,15,Best overall - zero abstention
+ollama_mistral,ollama,mistral:latest,0.0645,0.0296,0.0369,0.0894,123,15,Hallucinated rule IDs

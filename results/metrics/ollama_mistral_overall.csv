@@ -1,0 +1,2 @@
+model,macro_precision,macro_recall,macro_f1,abstention_rate,n_predictions
+ollama_mistral,0.0645,0.0296,0.0369,0.0894,123

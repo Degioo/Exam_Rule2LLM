@@ -1,0 +1,2 @@
+model,macro_precision,macro_recall,macro_f1,abstention_rate,n_predictions
+openai_gpt41,0.6125,0.7292,0.6332,0.0,120
